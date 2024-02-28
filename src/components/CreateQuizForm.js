@@ -11,31 +11,31 @@ const CreateQuizForm = () => {
   }, []);
 
   const handleAddQuestion = () => {
-    // Randomly select a question from the questionsData
+   
     const randomIndex = Math.floor(Math.random() * questionsData.length);
     const randomQuestion = questionsData[randomIndex];
     
-    // Add the selected question to the list of questions
+    
     setQuestions(prevQuestions => [...prevQuestions, randomQuestion]);
   };
 
   const handleUserAddQuestion = () => {
-    // Logic to handle user input for adding a question
-    // For simplicity, let's just add a placeholder question
+    
+    
     const placeholderQuestion = {
       question: 'Enter your question here...',
       options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'],
-      correctAnswer: 0 // Default to first option
+      correctAnswer: 0 
     };
     setQuestions(prevQuestions => [...prevQuestions, placeholderQuestion]);
   };
 
   const handleRemoveQuestion = (index) => {
-    // Implement logic to remove a question
+
   };
 
   const handleSubmit = () => {
-    // Implement logic to submit the quiz
+   
     alert(`Quiz Title: ${title}\nNumber of Questions: ${questions.length}`);
   };
 

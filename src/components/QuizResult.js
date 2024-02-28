@@ -1,7 +1,7 @@
 import React from 'react';
 
 const QuizResult = () => {
-  // Implement logic to display quiz result
+
 
   return (
     <div>
